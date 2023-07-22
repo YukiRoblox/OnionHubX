@@ -12,7 +12,7 @@ ContentProvider:PreloadAsync({"rbxassetid://3570695787", "rbxassetid://270889159
 
 local Library = {
     Theme = {
-        MainColor = Color3.fromRGB(0, 255, 255), -- default color  255, 75, 75
+        MainColor = Color3.fromRGB(155, 0, 0), -- 255, 75, 75 Default Color
         BackgroundColor = Color3.fromRGB(35, 35, 35),
         UIToggleKey = Enum.KeyCode.RightControl,
         TextFont = Enum.Font.SourceSansBold,
@@ -56,7 +56,7 @@ local function RippleEffect(object)
 
         Ripple.Name = "Ripple"
         Ripple.Parent = object
-        Ripple.BackgroundColor3 = Color3.fromRGB(0, 255, 0) -- 255, 255, 255
+        Ripple.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         Ripple.BackgroundTransparency = 1.000
         Ripple.ZIndex = 8
         Ripple.Image = "rbxassetid://2708891598"
@@ -154,21 +154,21 @@ Border.ImageTransparency = 1
 
 Topbar.Name = "Topbar"
 Topbar.Parent = Main
-Topbar.BackgroundColor3 = Color3.fromRGB(0, 255, 0) -- 255, 255, 255
+Topbar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Topbar.BackgroundTransparency = 1.000
 Topbar.Size = UDim2.new(0, 450, 0, 15)
 Topbar.ZIndex = 2
 
 UITabs.Name = "UITabs"
 UITabs.Parent = Main
-UITabs.BackgroundColor3 = Color3.fromRGB(0, 255, 0)  -- 255, 255, 255
+UITabs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 UITabs.BackgroundTransparency = 1.000
 UITabs.ClipsDescendants = true
 UITabs.Size = UDim2.new(1, 0, 1, 0)
 
 Tabs.Name = "Tabs"
 Tabs.Parent = UITabs
-Tabs.BackgroundColor3 = Color3.fromRGB(0, 255, 0) -- 255, 255, 255
+Tabs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Tabs.BackgroundTransparency = 1.000
 Tabs.Position = UDim2.new(0, 13, 0, 41)
 Tabs.Size = UDim2.new(0, 421, 0, 209)
@@ -307,8 +307,8 @@ function Library:CreateTab(name)
     Title.ZIndex = 2
     Title.Font = Library.Theme.TextFont
     Title.Text =  name
-    Title.TextColor3 = Color3.fromRGB(0, 0, 0) -- 255, 255, 255
-    Title.TextSize = 15.000 -- Original 15
+    Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+    Title.TextSize = 17.500 -- Original 15
 
     SectionLayout.Name = "SectionLayout"
     SectionLayout.Parent = NameTab
@@ -461,7 +461,7 @@ function Library:CreateTab(name)
             Button.ZIndex = 6
             Button.Font = Library.Theme.TextFont
             Button.Text = name
-            Button.TextColor3 = Color3.fromRGB(0, 0, 0) -- Default 255, 255, 255
+            Button.TextColor3 = Color3.fromRGB(255, 255, 255)
             Button.TextSize = 15.000
             Button.ClipsDescendants = true
 
