@@ -12,7 +12,7 @@ ContentProvider:PreloadAsync({"rbxassetid://3570695787", "rbxassetid://270889159
 
 local Library = {
     Theme = {
-        MainColor = Color3.fromRGB(155, 0, 0), -- 255, 75, 75 Default Color
+        MainColor = Color3.fromRGB(155, 0, 0), -- 255, 75, 75
         BackgroundColor = Color3.fromRGB(35, 35, 35),
         UIToggleKey = Enum.KeyCode.RightControl,
         TextFont = Enum.Font.SourceSansBold,
@@ -308,7 +308,7 @@ function Library:CreateTab(name)
     Title.Font = Library.Theme.TextFont
     Title.Text =  name
     Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-    Title.TextSize = 17.500 -- Original 15
+    Title.TextSize = 17.000 -- Original 15
 
     SectionLayout.Name = "SectionLayout"
     SectionLayout.Parent = NameTab
@@ -1024,7 +1024,7 @@ function Library:CreateTab(name)
             Hue.SliceCenter = Rect.new(100, 100, 100, 100)
             Hue.SliceScale = 0.050
 
-            UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(0.20, Color3.fromRGB(234, 255, 0)), ColorSequenceKeypoint.new(0.40, Color3.fromRGB(21, 255, 0)), ColorSequenceKeypoint.new(0.60, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.80, Color3.fromRGB(0, 17, 255)), ColorSequenceKeypoint.new(0.90, Color3.fromRGB(255, 0, 251)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 4))}
+            UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(0.20, Color3.fromRGB(234, 255, 0)), ColorSequenceKeypoint.new(0.40, Color3.fromRGB(21, 255, 0)), ColorSequenceKeypoint.new(0.60, Color3.fromRGB(0, 255, 255)), ColorSequenceKeypoint.new(0.80, Color3.fromRGB(0, 17, 255)), ColorSequenceKeypoint.new(0.90, Color3.fromRGB(255, 0, 251)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 4))}
             UIGradient.Rotation = 270
             UIGradient.Parent = Hue
             
