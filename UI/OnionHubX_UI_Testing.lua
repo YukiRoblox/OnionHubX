@@ -12,7 +12,7 @@ ContentProvider:PreloadAsync({"rbxassetid://3570695787", "rbxassetid://270889159
 
 local Library = {
     Theme = {
-        MainColor = Color3.fromRGB(155, 5, 5), -- 255, 75, 75
+        MainColor = Color3.fromRGB(255, 80, 80),
         BackgroundColor = Color3.fromRGB(35, 35, 35),
         UIToggleKey = Enum.KeyCode.RightControl,
         TextFont = Enum.Font.SourceSansBold,
@@ -27,9 +27,9 @@ local Library = {
 }
 
 local function DarkenObjectColor(object, amount)
-    local ColorR = (object.r * 1) - amount
-    local ColorG = (object.g * 5) - amount
-    local ColorB = (object.b * 5) - amount
+    local ColorR = (object.r * 255) - amount
+    local ColorG = (object.g * 255) - amount
+    local ColorB = (object.b * 255) - amount
    
     return Color3.fromRGB(ColorR, ColorG, ColorB)
 end
@@ -37,7 +37,7 @@ end
 local function SetUIAccent(color)
     for i, v in pairs(Library.LibraryColorTable) do
         if HasProperty(v, "ImageColor3") then
-            if v ~= "CheckboxOutline" and v.ImageColor3 ~= Color3.fromRGB(0, 100, 0) then
+            if v ~= "CheckboxOutline" and v.ImageColor3 ~= Color3.fromRGB(65, 65, 65) then
                 v.ImageColor3 = color
             end
         end
