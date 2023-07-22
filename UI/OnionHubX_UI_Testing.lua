@@ -308,7 +308,7 @@ function Library:CreateTab(name)
     Title.Font = Library.Theme.TextFont
     Title.Text =  name
     Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-    Title.TextSize = 16.750 -- Original 15
+    Title.TextSize = 16.250 -- Original 15
 
     SectionLayout.Name = "SectionLayout"
     SectionLayout.Parent = NameTab
