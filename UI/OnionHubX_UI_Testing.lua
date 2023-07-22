@@ -56,7 +56,7 @@ local function RippleEffect(object)
 
         Ripple.Name = "Ripple"
         Ripple.Parent = object
-        Ripple.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        Ripple.BackgroundColor3 = Color3.fromRGB(0, 135, 0) -- 255, 255, 255
         Ripple.BackgroundTransparency = 1.000
         Ripple.ZIndex = 8
         Ripple.Image = "rbxassetid://2708891598"
@@ -307,8 +307,8 @@ function Library:CreateTab(name)
     Title.ZIndex = 2
     Title.Font = Library.Theme.TextFont
     Title.Text =  name
-    Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-    Title.TextSize = 12.500 -- Original 15
+    Title.TextColor3 = Color3.fromRGB(0, 0, 0) -- 255, 255, 255
+    Title.TextSize = 15.000 -- Original 15
 
     SectionLayout.Name = "SectionLayout"
     SectionLayout.Parent = NameTab
