@@ -12,7 +12,7 @@ ContentProvider:PreloadAsync({"rbxassetid://3570695787", "rbxassetid://270889159
 
 local Library = {
     Theme = {
-        MainColor = Color3.fromRGB(0, 0, 255), -- default color  255, 75, 75
+        MainColor = Color3.fromRGB(0, 255, 255), -- default color  255, 75, 75
         BackgroundColor = Color3.fromRGB(35, 35, 35),
         UIToggleKey = Enum.KeyCode.RightControl,
         TextFont = Enum.Font.SourceSansBold,
@@ -461,7 +461,7 @@ function Library:CreateTab(name)
             Button.ZIndex = 6
             Button.Font = Library.Theme.TextFont
             Button.Text = name
-            Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+            Button.TextColor3 = Color3.fromRGB(0, 0, 0) -- Default 255, 255, 255
             Button.TextSize = 15.000
             Button.ClipsDescendants = true
 
