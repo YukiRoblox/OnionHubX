@@ -12,7 +12,7 @@ ContentProvider:PreloadAsync({"rbxassetid://3570695787", "rbxassetid://270889159
 
 local Library = {
     Theme = {
-        MainColor = Color3.fromRGB(155, 0, 0), -- 255, 75, 75
+        MainColor = Color3.fromRGB(155, 5, 5), -- 255, 75, 75
         BackgroundColor = Color3.fromRGB(35, 35, 35),
         UIToggleKey = Enum.KeyCode.RightControl,
         TextFont = Enum.Font.SourceSansBold,
@@ -27,9 +27,9 @@ local Library = {
 }
 
 local function DarkenObjectColor(object, amount)
-    local ColorR = (object.r * 50) - amount
-    local ColorG = (object.g * 50) - amount
-    local ColorB = (object.b * 50) - amount
+    local ColorR = (object.r * 1) - amount
+    local ColorG = (object.g * 5) - amount
+    local ColorB = (object.b * 5) - amount
    
     return Color3.fromRGB(ColorR, ColorG, ColorB)
 end
