@@ -37,7 +37,7 @@ end
 local function SetUIAccent(color)
     for i, v in pairs(Library.LibraryColorTable) do
         if HasProperty(v, "ImageColor3") then
-            if v ~= "CheckboxOutline" and v.ImageColor3 ~= Color3.fromRGB(65, 65, 65) then
+            if v ~= "CheckboxOutline" and v.ImageColor3 ~= Color3.fromRGB(0, 100, 0) then
                 v.ImageColor3 = color
             end
         end
