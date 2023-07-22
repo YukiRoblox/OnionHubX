@@ -27,9 +27,9 @@ local Library = {
 }
 
 local function DarkenObjectColor(object, amount)
-    local ColorR = (object.r * 1) - amount
-    local ColorG = (object.g * 1) - amount
-    local ColorB = (object.b * 1) - amount
+    local ColorR = (object.r * 50) - amount
+    local ColorG = (object.g * 50) - amount
+    local ColorB = (object.b * 50) - amount
    
     return Color3.fromRGB(ColorR, ColorG, ColorB)
 end
