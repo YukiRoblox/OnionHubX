@@ -56,7 +56,7 @@ local function RippleEffect(object)
 
         Ripple.Name = "Ripple"
         Ripple.Parent = object
-        Ripple.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        Ripple.BackgroundColor3 = Color3.fromRGB(0, 255, 0) -- 255, 255, 255
         Ripple.BackgroundTransparency = 1.000
         Ripple.ZIndex = 8
         Ripple.Image = "rbxassetid://2708891598"
@@ -161,14 +161,14 @@ Topbar.ZIndex = 2
 
 UITabs.Name = "UITabs"
 UITabs.Parent = Main
-UITabs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UITabs.BackgroundColor3 = Color3.fromRGB(0, 255, 0)  -- 255, 255, 255
 UITabs.BackgroundTransparency = 1.000
 UITabs.ClipsDescendants = true
 UITabs.Size = UDim2.new(1, 0, 1, 0)
 
 Tabs.Name = "Tabs"
 Tabs.Parent = UITabs
-Tabs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tabs.BackgroundColor3 = Color3.fromRGB(0, 255, 0) -- 255, 255, 255
 Tabs.BackgroundTransparency = 1.000
 Tabs.Position = UDim2.new(0, 13, 0, 41)
 Tabs.Size = UDim2.new(0, 421, 0, 209)
