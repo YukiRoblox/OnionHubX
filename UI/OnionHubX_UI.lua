@@ -291,7 +291,7 @@ function Library:CreateTab(name)
     NameTabButton.Parent = TabButtons
     NameTabButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     NameTabButton.BackgroundTransparency = 1.000
-    NameTabButton.Size = UDim2.new(0, 84, 0, 25) -- Original 419, divide by how many tabs you want
+    NameTabButton.Size = UDim2.new(0, 70, 0, 25) -- Original 419, divide by how many tabs you want
     NameTabButton.ZIndex = 2
     NameTabButton.Image = "rbxassetid://3570695787"
     NameTabButton.ImageColor3 = Library.Theme.MainColor
@@ -308,7 +308,7 @@ function Library:CreateTab(name)
     Title.Font = Library.Theme.TextFont
     Title.Text =  name
     Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-    Title.TextSize = 15.000
+    Title.TextSize = 12.500 -- Original 15
 
     SectionLayout.Name = "SectionLayout"
     SectionLayout.Parent = NameTab
